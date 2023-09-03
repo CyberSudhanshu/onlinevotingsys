@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Voting System</title>
+  <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="index.css">
+  <style>
+    .box {
+      border: 2px solid #333;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #f8f9fa;
+      border-radius: 4px;
+      box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+    .box:hover {
+      transform: scale(1.05);
+    }
+      .box a {
+      text-decoration: none;
+      color: #333;
+      font-size: 25px;
+    }
+    
+    .box a:hover {
+      text-decoration: none;
+      color: #007bff;
+      hover-transform
+    }
+     /* Footer container */
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+      }
+      
+      /* Three columns */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 0 10px;
+      }
+      
+      /* About section */
+      .about {
+        text-align: center;
+      }
+      
+      /* Services section */
+      .services a{
+        text-decoration: none;
+      }
+      .services {
+        text-align: center;
+      }
+      
+      /* Social media section */
+      .social {
+        text-align: center;
+      }
+      
+      /* Links */
+      .link {
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      
+      /* Hover effect */
+      .link:hover {
+        color: #ffcc00;
+        transform: scale(1.2);
+      }
+       .footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+      }
+      
+      /* Three columns */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 0 10px;
+      }
+      
+      /* About section */
+      .about {
+        text-align: center;
+      }
+      
+      /* Services section */
+      .services {
+        text-align: center;
+      }
+      
+      /* Social media section */
+      .social a{
+
+        text-decoration: none;
+      }
+      .social {
+        text-align: center;
+      }
+      
+      /* Links */
+      .link {
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      
+      /* Hover effect */
+      .link:hover {
+        color: #ffcc00;
+        transform: scale(1.2);
+      }
+  </style>
+</head>
+<body style="background-color: aqua;">
+
+  <!-- Header -->
+  <header>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-aqua">
+      <a class="navbar-brand" href="home.html"><img src="logo.png" style="border-radious:solid-black"height="40px" width="40px" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html"  ><b>Home</b></a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <b >Services</b>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <a class="dropdown-item" href="#"> Political Party Indian Democracy</a>
+              <a class="dropdown-item" href="#">Student Voting</a>
+              <a class="dropdown-item" href="#">Organization Voting</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html"><b>Contact Us</b></a>
+          </li>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="condidate_reg.html" style="color:#D82708 "><b>Apply as condidate</b></a>
+            </li>
+            <li class="nav-item" ><a class="nav-link"  href="index.html"  ><b style="float:right; text-decoration:none">Logout</b></a></li>
+            </div>
+        </ul>
+      </div>
+    </nav>
+<hr style="border: 10px solid black;">
+  </header>
+
+  <!-- Main Content -->
+
+  <main>
+    <!---condidate box info  --->
+     <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="box">
+
+          <h4 style="color:#05BAF4 ">BJP---------><img src="bjp.png" alt="bjp" height="60px" width="60px"></h4>
+          <a href="#">Mr narendra modo</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+             <h4 style="color:#05BAF4 ">APP---------><img src="aap.jpeg" alt="aap" style="height:50px; width:50px"></h4>       
+                <a href="">MR kejariwal</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box">
+            <h4 style="color:#05BAF4 ">Congress---------><img src="congress.png" alt="congress" height="60px" width="60px"></h4>
+          <a href="">Mr Rahul Gandhi</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!---voting form --->
+<form id="voting-form"  action="vote.jsp" method="post">
+  <h4><p>Which candidate do you want to vote for?</p></h4>
+  <input type="radio" style="height:40px ;width:40px " name="candidate" value="a" id="candidate-a">
+  <label for="candidate-a"><b>MR Narendra modi</b></label>
+  <br>
+  <input type="radio" style="height:40px ;width:40px " name="candidate" value="b" id="candidate-b">
+  <label for="candidate-b"><b>Mr Kejariwal</b></label>
+  <br>
+  <input type="radio" style="height:40px ;width:40px " name="candidate" value="c" id="candidate-c">
+  <label for="candidate-c"><b>Mr Rahul gandhi</b> </label>
+  <br>
+  <textarea name="reason" id="reason" placeholder="Why do you want to vote for this candidate?"></textarea>
+  <br>
+  <button type="submit" id="submit-button">Submit Vote</button>
+</form>
+<script>
+  const form = document.getElementById('voting-form');
+  const submitButton = document.getElementById('submit-button');
+
+  // Disable submit button initially
+  submitButton.disabled = true;
+
+  // Add event listener to form
+  form.addEventListener('change', () => {
+    // Check if a candidate is selected and a reason is provided
+    const selectedCandidate = document.querySelector('input[name="candidate"]:checked');
+    const reason = document.getElementById('reason').value;
+
+    if (selectedCandidate && reason) {
+      // Enable submit button if both fields are filled out
+      submitButton.disabled = false;
+      alert("you vote given to:"+selectedCandidate+"");
+    } else {
+      // Otherwise, disable submit button
+      submitButton.disabled = true;
+    }
+  });
+</script>
+</main>
+ <!-- Footer -->
+     <footer>
+      <div class="column about">
+        <h3>About Us</h3>
+        <p>We are a company that specializes online voting<br>fully secure Envirement.<br>and all type of voting we are conduct</p>
+      </div>
+      <div class="column services">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#" class="link">Political Party Indian Democracy</a></li>
+          <li><a href="#" class="link">Student Voting</a></li>
+          <li><a href="#" class="link">Organization Voting</a></li>
+        </ul>
+      </div>
+      <div class="column social">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#" class="link">Facebook<i class="fa fa-facebook"></i></a></li>
+          <li><a href="#" class="link">Twitter<i class="fa fa-twitter"></i></a></li>
+          <li><a href="#" class="link">Instagram<i class="fa fa-instagram"></i></a></li>
+          <li><a href="#" class="link">Whatsapp<i class="fa fa-whatsapp"></i></a></li>
+        </ul>
+     </div>
+     <div>
+      <hr >
+      <br>
+    <p class="text-center">Copyright &copy; 2023
+          <a href="#">onlinevoting</a> All rights reserved.</p>
+    </div>
+    </footer>          
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper-base.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
