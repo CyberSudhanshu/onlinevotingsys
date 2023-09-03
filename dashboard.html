@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Voting System - Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="">
+	 <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	 <style>
+	 	.body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #333;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+.header h1 {
+	font-size: 24px;
+	margin: 0;
+}
+
+.header p {
+	font-size: 16px;
+	margin: 5px 0 0;
+}
+
+.sidebar {
+	background-color: #f0f0f0;
+	padding: 20px;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar li {
+	margin-bottom: 10px;
+}
+
+.sidebar a {
+	display: block;
+	padding: 10px;
+	background-color: #fff;
+	color: #333;
+	text-decoration: none
+}
+      /* Footer container */
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+      }
+      
+      /* Three columns */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 0 10px;
+      }
+      
+      /* About section */
+      .about {
+        text-align: center;
+      }
+      
+      /* Services section */
+      .services a{
+        text-decoration: none;
+      }
+      .services {
+        text-align: center;
+      }
+      
+      /* Social media section */
+      .social {
+        text-align: center;
+      }
+      
+      /* Links */
+      .link {
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      
+      /* Hover effect */
+      .link:hover {
+        color: #ffcc00;
+        transform: scale(1.2);
+      }
+       .footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+      }
+      
+      /* Three columns */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 0 10px;
+      }
+      
+      /* About section */
+      .about {
+        text-align: center;
+      }
+      
+      /* Services section */
+      .services {
+        text-align: center;
+      }
+      
+      /* Social media section */
+      .social a{
+
+        text-decoration: none;
+      }
+      .social {
+        text-align: center;
+      }
+      
+      /* Links */
+      .link {
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      
+      /* Hover effect */
+      .link:hover {
+        color: #ffcc00;
+        transform: scale(1.2);
+      }
+	 </style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<h4><a href="home.html" style="color:#AEF74B;text-decoration:none;;">HOME</a><h4>
+			<h1>Online Voting System</h1>
+			<p>Welcome <%=txtfname %> </p>
+			<button style="float:right;padding:8px;margin-top:-50px;"><a href="home.html"><b>Back</b></a></button>
+		</div>
+		<div class="sidebar">
+			<ul>
+				<li><a href="#">Dashboard</a></li>
+				<li><a href="#">Manage Voters</a></li>
+				<li><a href="#">Manage Candidates</a></li>
+				<li><a href="#">Manage Elections</a></li>
+				<li><a href="#">View Results</a></li>
+				<li><a href="">Logout</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<h2>Dashboard</h2>
+			<p>Welcome to the Online Voting System dashboard. Here you can manage and monitor the system.</p>
+			<ul>
+				<li><strong>Total Voters:</strong> 1000</li>
+				<li><strong>total condidates:</strong> 5</li>
+				<li><strong>winner:</strong> 200</li>
+				<li><strong>Total voting:</strong> 10</li>
+				<li><strong>Total Elections:</strong> 5</li>
+				<li><strong>Total loss:</strong> 500</li>
+			</ul>
+		</div>
+	</div>
+		<!---footer--->
+ <!-- Footer -->
+     <footer>
+      <div class="column about">
+        <h3>About Us</h3>
+        <p>We are a company that specializes online voting<br>fully secure Envirement.<br>and all type of voting we are conduct</p>
+      </div>
+      <div class="column services">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#" class="link">Political Party Indian Democracy</a></li>
+          <li><a href="#" class="link">Student Voting</a></li>
+          <li><a href="#" class="link">Organization Voting</a></li>
+        </ul>
+      </div>
+      <div class="column social">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#" class="link">Facebook<i class="fa fa-facebook"></i></a></li>
+          <li><a href="#" class="link">Twitter<i class="fa fa-twitter"></i></a></li>
+          <li><a href="#" class="link">Instagram<i class="fa fa-instagram"></i></a></li>
+          <li><a href="#" class="link">Whatsapp<i class="fa fa-whatsapp"></i></a></li>
+        </ul>
+     </div>
+     <div>
+      <hr >
+      <br>
+    <p class="text-center">Copyright &copy; 2023
+          <a href="#">onlinevoting</a> All rights reserved.</p>
+    </div>
+    </footer> 
+	 <!-- end Footer -->
+	  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper-base.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
